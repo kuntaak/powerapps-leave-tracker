@@ -37,26 +37,18 @@ The app enables employees to submit leave requests, managers to approve or rejec
 **Dashboard (Real-time request tracking)**  
 ![Dashboard](screenshots/dashboard.png)
 
-**Data Table Filter Logic**  
-Power Apps formula used for search:
-```powerapps
-Filter(
-  'P2',
-  TextInput2.Text = "" ||
-  StartsWith(Username.Value, TextInput2.Text) ||
-  StartsWith(Email.Value, TextInput2.Text)
-)
+**Data Table Filter Logic**
+![DataTable](screenshots/datatable-formula.png)
 
-SharePoint Lists
+**Sharepoint Lists**
+![P1 Master Employee Metadata](screenshots/list-masterfile.png)
 
-P1 (Master Employee Metadata)
+![P2 Leave Request Lookup](screenshots/list-leave-requests.png)
 
-P2 (Leave Requests Lookup)
+**Power Automate Flow - Trigger → Approval → Condition → Email + Update Status** 
+![Flow Overview Page](screenshots/flow-1.png)
 
-Power Automate Flow
-
-Trigger → Approval → Condition → Email + Update Status
-
+![Flow Configuration Page](screenshots/flow-2.png)
 
 🚀 How It Works
 Employee applies for leave in the Canvas App.
@@ -81,4 +73,3 @@ Automated approval workflows with Power Automate, reducing manual effort and imp
 Built a real-time dashboard integrated with SharePoint for easy manager oversight.
 
 Packaged and documented solution in a professional GitHub portfolio project.
-
